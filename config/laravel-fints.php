@@ -3,11 +3,11 @@
 return [
 
     'credentials' => [
-        'host' => env('HBCI_HOST'),
-        'port' => env('HBCI_PORT', 443),
-        'bank_code' => env('HBCI_BANKCODE'),
-        'username' => env('HBCI_USERNAME'),
-        'pin' => env('HBCI_PIN')
+        'host' => env('FINTS_HOST',null),
+        'port' => env('FINTS_PORT', 443),
+        'bank_code' => env('FINTS_BANKCODE',null),
+        'username' => env('FINTS_USERNAME',null),
+        'pin' => env('FINTS_PIN',null)
     ],
     
     'encrypt_pin' => true,
