@@ -1,7 +1,7 @@
 {
     "name": "abiturma/laravel-fints",
     "description": "An HBCI-client for laravel for retrieving bank account statements",
-    "type": "library, laravel-package",
+    "type": "library",
     "license": "MIT",
     "keywords": [
         "banking",
