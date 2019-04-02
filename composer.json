@@ -1,0 +1,38 @@
+{
+    "name": "abiturma/laravel-fints",
+    "description": "An HBCI-client for laravel for retrieving bank account statements",
+    "type": "library, laravel-package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Abiturma\\LaravelFints\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Abiturma\\LaravelFints\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Aaron Kunert",
+            "email": "aaron.kunert@abiturma.de"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.1",
+        "abiturma/php-fints": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "orchestra/testbench": "^3.8"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Abiturma\\LaravelHbci\\Providers\\HbciServiceProvider"
+            ]
+        }
+    }
+}
