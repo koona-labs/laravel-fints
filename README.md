@@ -1,5 +1,10 @@
 # Laravel-Fints
 
+[![Latest Stable Version](https://poser.pugx.org/abiturma/laravel-fints/v/stable)](https://packagist.org/packages/abiturma/laravel-fints)
+[![Build Status](https://travis-ci.com/abiturma/laravel-fints.svg?branch=master)](https://travis-ci.com/abiturma/laravel-fints)
+[![License](https://poser.pugx.org/abiturma/laravel-fints/license)](https://packagist.org/packages/abiturma/laravel-fints)
+[![composer.lock](https://poser.pugx.org/abiturma/laravel-fints/composerlock)](https://packagist.org/packages/abiturma/laravel-fints)
+
 This Laravel package is a wrapper for Php-Fints, which provides an Hbci connection to your bank in order to retrieve statements of your bank accounts. For more details about Php-Fints see its [docs](https://github.com/abiturma/php-fints).
 
 ## Installation
