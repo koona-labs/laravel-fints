@@ -63,6 +63,8 @@ class FintsServiceProvider extends ServiceProvider
                 ->give($logger);
         }
         
+        
+        $this->app->bind('Fints', Fints::class); 
 
         
         $this->mergeConfigFrom(

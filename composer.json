@@ -31,8 +31,11 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Abiturma\\LaravelHbci\\Providers\\HbciServiceProvider"
+                "Abiturma\\LaravelFints\\Providers\\FintsServiceProvider"
             ]
+        },
+        "aliases": {
+            "Fints": "Abiturmah\\LaravelFints\\FintsFacade"
         }
     }
 }
