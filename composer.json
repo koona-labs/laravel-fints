@@ -27,7 +27,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": ">=7.1",
+        "php": ">=7.2",
         "abiturma/php-fints": "^1.0",
         "illuminate/config": "^5.5",
         "illuminate/console": "^5.5",
