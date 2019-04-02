@@ -5,7 +5,6 @@ namespace Abiturma\LaravelFints\Tests;
 use Abiturma\LaravelFints\Fints;
 use Abiturma\LaravelFints\FintsServiceProvider;
 use Illuminate\Support\Collection;
-use Tests\TestCase;
 
 class FintsTest extends TestCase
 {
