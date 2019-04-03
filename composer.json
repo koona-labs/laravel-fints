@@ -45,11 +45,11 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Abiturma\\LaravelFints\\Providers\\FintsServiceProvider"
+                "Abiturma\\LaravelFints\\FintsServiceProvider"
             ]
         },
         "aliases": {
-            "Fints": "Abiturmah\\LaravelFints\\FintsFacade"
+            "Fints": "Abiturma\\LaravelFints\\FintsFacade"
         }
     }
 }
