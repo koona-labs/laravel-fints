@@ -46,10 +46,10 @@
         "laravel": {
             "providers": [
                 "Abiturma\\LaravelFints\\FintsServiceProvider"
-            ]
-        },
-        "aliases": {
-            "Fints": "Abiturma\\LaravelFints\\FintsFacade"
+            ],
+            "aliases": {
+                "Fints": "Abiturma\\LaravelFints\\FintsFacade"
+            }
         }
     }
 }
