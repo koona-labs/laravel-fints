@@ -37,39 +37,36 @@ class FintsServiceProvider extends ServiceProvider
 
     public function register()
     {
-        $this->app->bind(
-            SendsMessages::class,
-            Curl::class
-        );
-        
-        $this->app->bind(
-            EncryptsASequenceOfSegments::class,
-            NullEncrypter::class
-        );
-        
-        $this->app->bind(
-            HoldsCredentials::class,
-            Credentials::class
-        );
-        
-        
-        if (!config('laravel-fints.logging.enabled')) {
-            $this->app->when(Dialog::class)
-                ->needs(LoggerInterface::class)
-                ->give(new NullLogger());
-        } elseif ($logger = config('laravel-fints.enable_logging')) {
-            $this->app->when(Dialog::class)
-                ->needs(LoggerInterface::class)
-                ->give($logger);
-        }
-        
-        
-        $this->app->bind('Fints', Fints::class); 
-
-        
         $this->mergeConfigFrom(
             __DIR__ . '/../config/laravel-fints.php',
             'laravel-fints'
         );
+
+        $this->app->bind(
+            SendsMessages::class,
+            Curl::class
+        );
+
+        $this->app->bind(
+            EncryptsASequenceOfSegments::class,
+            NullEncrypter::class
+        );
+
+        $this->app->bind(
+            HoldsCredentials::class,
+            Credentials::class
+        );
+
+        if (!config('laravel-fints.logging.enabled')) {
+            $this->app->when(Dialog::class)
+                ->needs(LoggerInterface::class)
+                ->give(NullLogger::class);
+        } elseif ($logger = config('laravel-fints.logging.logger')) {
+            $this->app->when(Dialog::class)
+                ->needs(LoggerInterface::class)
+                ->give($logger);
+        }
+
+        $this->app->bind('Fints', Fints::class);
     }
 }
