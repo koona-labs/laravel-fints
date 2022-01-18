@@ -7,7 +7,10 @@
 
 This Laravel package is a wrapper for Php-Fints, which provides an Hbci connection to your bank in order to retrieve statements of your bank accounts. For more details about Php-Fints see its [docs](https://github.com/abiturma/php-fints).
 
+
 ## Installation
+
+This package requires PHP 8.0 and Laravel 8.0 or higher. If you are on a PHP version below 8.0 or a Laravel version below 8.0 just use an older version of this package.
 
 Available through composer:
 

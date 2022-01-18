@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Integration;
+namespace Tests\Console;
 
 use Abiturma\LaravelFints\FintsServiceProvider;
 use Abiturma\LaravelFints\Tests\TestCase;
