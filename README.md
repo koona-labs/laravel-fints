@@ -1,7 +1,7 @@
 # Laravel-Fints
 
 [![Latest Stable Version](https://poser.pugx.org/abiturma/laravel-fints/v/stable)](https://packagist.org/packages/abiturma/laravel-fints)
-[![Build Status](https://travis-ci.com/abiturma/laravel-fints.svg?branch=master)](https://travis-ci.com/abiturma/laravel-fints)
+![Tests](https://github.com/abiturma/laravel-fints/actions/workflows/testing.yml/badge.svg)
 [![License](https://poser.pugx.org/abiturma/laravel-fints/license)](https://packagist.org/packages/abiturma/laravel-fints)
 [![composer.lock](https://poser.pugx.org/abiturma/laravel-fints/composerlock)](https://packagist.org/packages/abiturma/laravel-fints)
 
