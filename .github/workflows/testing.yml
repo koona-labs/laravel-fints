@@ -1,0 +1,29 @@
+name: Testing
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  testing:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        include:
+          - composer-flags: --prefer-lowest
+          - composer-flags: ""
+    
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Update composer
+        run: composer self-update
+
+      - name: Composer update
+        env:
+          COMPOSER_FLAGS: ${{ matrix.composer-flags }}
+        run: composer update ${COMPOSER_FLAGS} --no-interaction --prefer-dist
+
+      - name: Run tests
+        run: vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
